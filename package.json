@@ -1,0 +1,14 @@
+{
+  "name": "template-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./styles/main.css --watch"
+  },
+  "author": "tuan anh",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
