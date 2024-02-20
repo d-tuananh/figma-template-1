@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/input.css -o ./styles/main.css --watch"
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./styles/main.css --watch",
+    "dev": "vite"
   },
   "author": "tuan anh",
   "license": "ISC",
@@ -12,5 +13,8 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "vite": "^5.1.3"
   }
 }
