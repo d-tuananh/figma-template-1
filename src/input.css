@@ -10,7 +10,7 @@
   }
 
   section {
-    @apply mt-[4rem] first:mt-0 md:mt-[8rem] last:mt-0;
+    @apply mt-[4rem] first:mt-0 md:mt-[8rem];
   }
 
   h2 {
@@ -25,14 +25,33 @@
   .text-linear-blue {
     @apply bg-linear_blue bg-clip-text text-transparent;
   }
+
   .text-linear-orange {
     @apply bg-linear_orange bg-clip-text text-transparent;
   }
+
   .text-linear-green {
     @apply bg-linear_green bg-clip-text text-transparent;
   }
+
   .menu-item {
     @apply hover:text-linear-blue relative w-full py-2 text-center xl:w-fit xl:before:absolute xl:before:-bottom-3 xl:before:left-0 xl:before:block xl:before:h-1 xl:before:w-[0] xl:before:bg-linear_blue xl:before:transition-all xl:before:duration-500 xl:before:ease-in-out hover:xl:before:w-full;
+  }
+
+  .triangle {
+    @apply lg:before:content-[''] lg:before:w-[4rem] lg:before:h-[4rem] lg:before:bg-white lg:before:rotate-45 lg:before:-z-10 lg:before:top-1/2 lg:before:-translate-y-1/2 lg:before:absolute;
+  }
+
+  .circle {
+    @apply lg:after:absolute lg:after:content-[''] lg:after:w-7 lg:after:h-7 lg:after:bg-white lg:after:rounded-full lg:after:top-1/2 lg:after:left-1/2 lg:after:-translate-x-1/2 lg:after:-translate-y-1/2;
+  }
+
+  .icon-sumary {
+    @apply relative before:absolute before:left-0 before:top-0 before:flex before:h-5 before:w-5 before:items-center before:justify-center before:rounded-full before:bg-linear_green before:text-xl before:font-bold before:text-white before:content-['+'];
+  }
+
+  details[open] .icon-sumary {
+    @apply before:content-['-'];
   }
 }
 
@@ -82,12 +101,80 @@
     0 90px 0 white;
 }
 
-.icon-sumary {
-  @apply relative before:absolute before:left-0 before:top-0 before:flex before:h-5 before:w-5 before:items-center before:justify-center before:rounded-full before:bg-linear_green before:text-xl before:font-bold before:text-white before:content-['+'];
+.line-dashed-1 {
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  background-color: #0679bb;
 }
 
-details[open] .icon-sumary {
-  @apply before:content-['-'];
+.line-dashed-1::before {
+  content: "";
+  position: absolute;
+  left: 2.7rem;
+  bottom: 2.3rem;
+  width: 0.5rem;
+  height: 2px; /* Chiều cao của nét đứt */
+  background-color: #0679bb; /* Màu của nét đứt */
+  box-shadow:
+    15px 0 0 #0679bb,
+    30px 0 0 #0679bb,
+    45px 0 0 #0679bb,
+    60px 0 0 #0679bb;
+}
+
+.line-dashed-1::after {
+  content: "";
+  position: absolute;
+  left: 2.5rem;
+  bottom: 2rem;
+  width: 2px;
+  height: 0.5rem; /* Chiều cao của nét đứt */
+  background-color: #0679bb; /* Màu của nét đứt */
+  box-shadow:
+    0 15px 0 #0679bb,
+    0 30px 0 #0679bb,
+    0 45px 0 #0679bb;
+  transform: rotate(50deg);
+}
+
+.line-dashed-2 {
+  position: relative;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 100%;
+  background-color: #0679bb;
+}
+
+.line-dashed-2::before {
+  content: "";
+  position: absolute;
+  right: 6rem;
+  bottom: 2.5rem;
+  width: 0.5rem;
+  height: 2px; /* Chiều cao của nét đứt */
+  background-color: #0679bb; /* Màu của nét đứt */
+  box-shadow:
+    15px 0 0 #0679bb,
+    30px 0 0 #0679bb,
+    45px 0 0 #0679bb,
+    60px 0 0 #0679bb;
+}
+
+.line-dashed-2::after {
+  content: "";
+  position: absolute;
+  left: 0.3rem;
+  bottom: 0;
+  width: 2px;
+  height: 0.5rem; /* Chiều cao của nét đứt */
+  background-color: #0679bb; /* Màu của nét đứt */
+  box-shadow:
+    0 15px 0 #0679bb,
+    0 30px 0 #0679bb,
+    0 45px 0 #0679bb;
+  transform: rotate(140deg);
 }
 
 .swiper {

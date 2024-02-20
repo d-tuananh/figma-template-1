@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         main: "#252525",
+        ct_8888: "#888888",
       },
       backgroundImage: {
         linear_orange: "linear-gradient(180deg, #FFB469 0%, #E57709 100%)",
@@ -21,4 +22,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
