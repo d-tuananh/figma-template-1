@@ -69,6 +69,14 @@
   .swiper-slide {
     @apply rounded-2xl;
   }
+
+  .swiper-button-next-2 {
+    @apply absolute bottom-[3rem] right-0 z-10 translate-x-[3rem];
+  }
+
+  .swiper-button-prev-2 {
+    @apply absolute bottom-[3rem] left-0 z-10 -translate-x-[3rem];
+  }
 }
 
 @layer utilities {
@@ -234,4 +242,18 @@
 .trapezoid {
   border-left: 8rem solid transparent;
   border-bottom: 8rem solid white;
+}
+
+.mySwiper5 .swiper-slide {
+  opacity: 0.4;
+}
+
+.mySwiper5 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
 }

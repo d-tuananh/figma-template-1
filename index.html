@@ -1837,6 +1837,74 @@
           <div
             class="mx-auto my-6 h-1 w-[10rem] rounded-full bg-linear_blue"
           ></div>
+          <div class="swiper-container space-y-5">
+            <div
+              style="
+                --swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff;
+              "
+              class="swiper mySwiper6"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img15.png" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next-2">
+              <i
+                class="fas fa-arrow-right rounded-full bg-[#2891CC] p-2 text-white md:p-3"
+              ></i>
+            </div>
+            <div class="swiper-button-prev-2">
+              <i
+                class="fas fa-arrow-left rounded-full bg-[#2891CC] p-2 text-white md:p-3"
+              ></i>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper5">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="public/img16.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img17.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img18.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img19.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img20.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img35.png" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="public/img36.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Section 11 -->
@@ -2505,13 +2573,13 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper5 = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
       });
-      var swiper2 = new Swiper(".mySwiper2", {
+      var swiper6 = new Swiper(".mySwiper2", {
         slidesPerView: 1,
         spaceBetween: 10,
         pagination: {
@@ -2567,6 +2635,29 @@
             slidesPerView: 3,
             spaceBetween: 40,
           },
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper5", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 10,
+          },
+        },
+      });
+      var swiper2 = new Swiper(".mySwiper6", {
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next-2",
+          prevEl: ".swiper-button-prev-2",
+        },
+        thumbs: {
+          swiper: swiper,
         },
       });
     </script>
