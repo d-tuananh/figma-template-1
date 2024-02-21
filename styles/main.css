@@ -2785,6 +2785,10 @@ details[open] .icon-sumary::before{
     right: auto;
   }
 
+  .\32xl\:left-\[15rem\]{
+    left: 15rem;
+  }
+
   .\32xl\:mx-\[2rem\]{
     margin-left: 2rem;
     margin-right: 2rem;
