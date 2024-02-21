@@ -14,13 +14,13 @@
   }
 
   h2 {
-    @apply text-4xl font-bold md:text-3xl;
+    @apply text-2xl font-bold md:text-3xl;
   }
 }
 
 @layer components {
   .container {
-    @apply mx-auto px-2 md:px-0;
+    @apply mx-auto px-1 lg:px-2 2xl:px-3;
   }
   .text-linear-blue {
     @apply bg-linear_blue bg-clip-text text-transparent;
@@ -55,15 +55,15 @@
   }
 
   .swiper-container {
-    @apply relative mx-[3.5rem] max-w-full;
+    @apply relative max-w-full sm:mx-[3.5rem];
   }
 
-  .swiper-button-next {
-    @apply after:hidden;
+  .swiper-button-next-1 {
+    @apply absolute right-0 top-1/2 z-10 hidden -translate-y-full translate-x-[3rem] sm:block;
   }
 
-  .swiper-button-prev {
-    @apply after:hidden;
+  .swiper-button-prev-1 {
+    @apply absolute left-0 top-1/2 z-10 hidden -translate-x-[3rem] -translate-y-full sm:block;
   }
 
   .swiper-slide {
@@ -71,11 +71,11 @@
   }
 
   .swiper-button-next-2 {
-    @apply absolute bottom-[3rem] right-0 z-10 translate-x-[3rem];
+    @apply absolute bottom-[3rem] right-0 z-10 hidden translate-x-[3rem] sm:block;
   }
 
   .swiper-button-prev-2 {
-    @apply absolute bottom-[3rem] left-0 z-10 -translate-x-[3rem];
+    @apply absolute bottom-[3rem] left-0 z-10 hidden -translate-x-[3rem] sm:block;
   }
 
   .swiper-button-next-3 {
