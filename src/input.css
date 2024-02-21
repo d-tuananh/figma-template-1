@@ -86,11 +86,12 @@
     @apply absolute left-0 top-1/2 z-10 -translate-y-1/2 translate-x-1 sm:-translate-x-[3rem];
   }
 
-  .mySwiper7 .swiper-slide-active div {
-    @apply bg-transparent bg-linear_blue text-white;
+  .mySwiper7 .swiper-slide-active > div {
+    @apply bg-linear_blue text-white;
   }
 
-  .mySwiper7 .swiper-slide-active span {
+  .mySwiper7 .swiper-slide-active span,
+  .mySwiper7 .swiper-slide-active div {
     @apply text-white;
   }
 
