@@ -939,12 +939,24 @@ details[open] .icon-sumary::before{
   left: 50%;
 }
 
+.left-\[15rem\]{
+  left: 15rem;
+}
+
 .left-\[16\.5\%\]{
   left: 16.5%;
 }
 
+.left-\[20rem\]{
+  left: 20rem;
+}
+
 .left-\[43\%\]{
   left: 43%;
+}
+
+.left-ct-left{
+  left: calc(50% + 10rem);
 }
 
 .right-0{
@@ -1007,38 +1019,6 @@ details[open] .icon-sumary::before{
   top: 9rem;
 }
 
-.bottom-5{
-  bottom: 1.25rem;
-}
-
-.left-\[5rem\]{
-  left: 5rem;
-}
-
-.left-\[20rem\]{
-  left: 20rem;
-}
-
-.left-\[15rem\]{
-  left: 15rem;
-}
-
-.left-2\/3{
-  left: 66.666667%;
-}
-
-.left-1\/3{
-  left: 33.333333%;
-}
-
-.left-\[60\%\]{
-  left: 60%;
-}
-
-.left-\[55\%\]{
-  left: 55%;
-}
-
 .-z-10{
   z-index: -10;
 }
@@ -1096,11 +1076,6 @@ details[open] .icon-sumary::before{
 .my-auto{
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.mx-\[1rem\]{
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .mb-1{
@@ -1161,14 +1136,6 @@ details[open] .icon-sumary::before{
 
 .mt-\[5rem\]{
   margin-top: 5rem;
-}
-
-.mr-\[10rem\]{
-  margin-right: 10rem;
-}
-
-.box-border{
-  box-sizing: border-box;
 }
 
 .line-clamp-2{
@@ -1254,14 +1221,6 @@ details[open] .icon-sumary::before{
   width: 20rem;
 }
 
-.w-\[35\%\]{
-  width: 35%;
-}
-
-.w-\[45\%\]{
-  width: 45%;
-}
-
 .w-\[5rem\]{
   width: 5rem;
 }
@@ -1297,6 +1256,11 @@ details[open] .icon-sumary::before{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-x-\[20rem\]{
+  --tw-translate-x: -20rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-translate-x-full{
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1307,38 +1271,8 @@ details[open] .icon-sumary::before{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-1\/2{
-  --tw-translate-y: 50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[6rem\]{
-  --tw-translate-y: 6rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[2rem\]{
-  --tw-translate-y: 2rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-y-\[5rem\]{
-  --tw-translate-y: 5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[5rem\]{
-  --tw-translate-x: 5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[25rem\]{
-  --tw-translate-x: 25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[30rem\]{
-  --tw-translate-x: 30rem;
+.translate-x-\[3rem\]{
+  --tw-translate-x: 3rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1347,48 +1281,13 @@ details[open] .icon-sumary::before{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-\[10rem\]{
-  --tw-translate-x: 10rem;
+.translate-y-1\/2{
+  --tw-translate-y: 50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-x-\[10rem\]{
-  --tw-translate-x: -10rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[40rem\]{
-  --tw-translate-x: -40rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[200rem\]{
-  --tw-translate-x: -200rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-translate-x-\[20rem\]{
-  --tw-translate-x: -20rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[8rem\]{
-  --tw-translate-x: 8rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[20rem\]{
-  --tw-translate-x: 20rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[32rem\]{
-  --tw-translate-x: 32rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[31rem\]{
-  --tw-translate-x: 31rem;
+.translate-y-\[6rem\]{
+  --tw-translate-y: 6rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1684,11 +1583,6 @@ details[open] .icon-sumary::before{
 
 .bg-no-repeat{
   background-repeat: no-repeat;
-}
-
-.object-left{
-  -o-object-position: left;
-     object-position: left;
 }
 
 .p-1{
@@ -2195,13 +2089,6 @@ details[open] .icon-sumary::before{
   pointer-events: none;
 }
 
-.hover\:text-linear-orange:hover{
-  background-image: linear-gradient(180deg, #FFB469 0%, #E57709 100%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-}
-
 @media (min-width: 1024px){
   .lg\:text-linear-green{
     background-image: linear-gradient(135deg, #2891CC 0%, #0A9949 100%);
@@ -2324,47 +2211,13 @@ details[open] .icon-sumary::before{
   background-image: linear-gradient(135deg, #4EBEFF 0%, #0679BB 100%);
 }
 
-.hover\:box-border:hover{
-  box-sizing: border-box;
-}
-
-.hover\:border:hover{
-  border-width: 1px;
-}
-
-.hover\:border-solid:hover{
-  border-style: solid;
-}
-
-.hover\:border-orange-700:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(194 65 12 / var(--tw-border-opacity));
-}
-
-.hover\:bg-orange-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-none:hover{
-  background-image: none;
-}
-
 .hover\:bg-clip-border:hover{
   background-clip: border-box;
-}
-
-.hover\:bg-clip-content:hover{
-  background-clip: content-box;
 }
 
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-transparent:hover{
-  color: transparent;
 }
 
 .hover\:opacity-75:hover{
@@ -2719,11 +2572,6 @@ details[open] .icon-sumary::before{
   .xl\:mx-\[1\.5rem\]{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
-  }
-
-  .xl\:mx-\[1rem\]{
-    margin-left: 1rem;
-    margin-right: 1rem;
   }
 
   .xl\:ml-\[4rem\]{

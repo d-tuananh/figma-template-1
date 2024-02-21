@@ -21,6 +21,9 @@ module.exports = {
         custom3: "0px 0px 40px rgba(0, 0, 0, 0.08)",
         "ct-orange": "0px 8px 16px 0px rgba(229, 119, 9, 0.35)",
       },
+      spacing: {
+        "ct-left": "calc(50% + 10rem)",
+      },
     },
   },
   plugins: [],
