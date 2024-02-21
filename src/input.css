@@ -77,11 +77,29 @@
   .swiper-button-prev-2 {
     @apply absolute bottom-[3rem] left-0 z-10 -translate-x-[3rem];
   }
+
+  .swiper-button-next-3 {
+    @apply absolute right-0 top-1/2 z-10 -translate-x-1 -translate-y-1/2 sm:translate-x-[3rem];
+  }
+
+  .swiper-button-prev-3 {
+    @apply absolute left-0 top-1/2 z-10 -translate-y-1/2 translate-x-1 sm:-translate-x-[3rem];
+  }
+
+  .mySwiper7 .swiper-slide-active div {
+    @apply bg-transparent bg-linear_blue text-white;
+  }
+
+  .mySwiper7 .swiper-slide-active span {
+    @apply text-white;
+  }
 }
 
 @layer utilities {
+  .mySwiper7 .swiper-slide-active button {
+    @apply bg-white text-[#2891CC];
+  }
 }
-
 .dotted-line-horizontal {
   position: relative;
 }

@@ -174,6 +174,7 @@
           >
             <button
               class="flex items-center gap-2 rounded-full bg-linear_orange px-5 py-2 text-white"
+              onclick="inputPhoneNumber()"
             >
               <svg
                 width="24"
@@ -318,6 +319,7 @@
             </p>
             <button
               class="mx-auto flex items-center gap-2 rounded-full bg-linear_orange px-5 py-2 text-white xl:mx-0"
+              onclick="inputPhoneNumber()"
             >
               <svg
                 width="24"
@@ -729,6 +731,7 @@
                 placeholder="Nhập số điện thoại..."
                 title="Số điện thoại từ 10 đến 12 chữ số"
                 class="w-full bg-transparent outline-none"
+                required
               />
               <button
                 class="flex min-w-fit items-center gap-2 rounded-full bg-linear_orange px-5 py-2 font-bold text-white hover:opacity-90"
@@ -1121,6 +1124,13 @@
               </div>
             </div>
           </div>
+          <button
+            class="shadow-ct-orange mx-auto mt-5 block space-x-2 rounded-full bg-linear_orange px-5 py-3 font-bold text-white hover:opacity-80"
+            onclick="inputPhoneNumber()"
+          >
+            <i class="fas fa-file-signature"></i>
+            <span>ĐĂNG KÝ TƯ VẤN</span>
+          </button>
         </div>
       </section>
       <!-- End Section 7 -->
@@ -1933,7 +1943,7 @@
                       class="aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="shadow-custom3 absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
                     >
                       <h6 class="line-clamp-2 text-center font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
@@ -1965,7 +1975,7 @@
                       class="aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="shadow-custom3 absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
                     >
                       <h6 class="line-clamp-2 text-center font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
@@ -1997,7 +2007,7 @@
                       class="aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="shadow-custom3 absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
                     >
                       <h6 class="line-clamp-2 text-center font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
@@ -2029,7 +2039,7 @@
                       class="aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="shadow-custom3 absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
                     >
                       <h6 class="line-clamp-2 text-center font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
@@ -2061,7 +2071,7 @@
                       class="aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="shadow-custom3 absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
                     >
                       <h6 class="line-clamp-2 text-center font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
@@ -2093,7 +2103,7 @@
                       class="aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="shadow-custom3 absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
                     >
                       <h6 class="line-clamp-2 text-center font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
@@ -2145,99 +2155,288 @@
           <div
             class="mx-auto my-6 h-1 w-[10rem] rounded-full bg-linear_blue"
           ></div>
-          <!-- <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
-            <div class=""><img src="public/img26.png" alt="" /></div>
-            <div class="flex flex-col items-center gap-3 py-6 text-[#2891CC]">
-              <h6 class="text-xl font-bold">Ưu đãi Tiêm chủng gói Gia Đình</h6>
-              <span class="text-5xl font-bold">999k</span>
-              <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
-              <p class="flex items-center gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6 text-[#2891CC]"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-                  />
-                </svg>
 
-                <span class="text-main"
-                  >Chương trình ưu đãi dành cho Gia đình 4 người</span
-                >
-              </p>
-              <p class="flex items-center gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6 text-[#2891CC]"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-                  />
-                </svg>
-
-                <span class="text-main"
-                  >Chương trình ưu đãi dành cho Gia đình 4 người</span
-                >
-              </p>
-              <p class="flex items-center gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6 text-[#2891CC]"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-                  />
-                </svg>
-
-                <span class="text-main"
-                  >Chương trình ưu đãi dành cho Gia đình 4 người</span
-                >
-              </p>
-              <p class="flex items-center gap-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6 text-[#2891CC]"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"
-                  />
-                </svg>
-
-                <span class="text-main"
-                  >Chương trình ưu đãi dành cho Gia đình 4 người</span
-                >
-              </p>
-              <button
-                class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
-              >
-                đăng ký ngay
-              </button>
+          <div class="swiper-container mx-0 sm:mx-[3.5rem]">
+            <div class="swiper mySwiper7">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
+                    <div class=""><img src="public/img26.png" alt="" /></div>
+                    <div
+                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                    >
+                      <h6 class="text-xl font-bold">
+                        Ưu đãi Tiêm chủng gói Gia Đình
+                      </h6>
+                      <span class="text-5xl font-bold">999k</span>
+                      <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
+                        onclick="inputPhoneNumber()"
+                      >
+                        đăng ký ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
+                    <div class=""><img src="public/img26.png" alt="" /></div>
+                    <div
+                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                    >
+                      <h6 class="text-xl font-bold">
+                        Ưu đãi Tiêm chủng gói Gia Đình
+                      </h6>
+                      <span class="text-5xl font-bold">999k</span>
+                      <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
+                        onclick="inputPhoneNumber()"
+                      >
+                        đăng ký ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
+                    <div class=""><img src="public/img26.png" alt="" /></div>
+                    <div
+                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                    >
+                      <h6 class="text-xl font-bold">
+                        Ưu đãi Tiêm chủng gói Gia Đình
+                      </h6>
+                      <span class="text-5xl font-bold">999k</span>
+                      <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
+                        onclick="inputPhoneNumber()"
+                      >
+                        đăng ký ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
+                    <div class=""><img src="public/img26.png" alt="" /></div>
+                    <div
+                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                    >
+                      <h6 class="text-xl font-bold">
+                        Ưu đãi Tiêm chủng gói Gia Đình
+                      </h6>
+                      <span class="text-5xl font-bold">999k</span>
+                      <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
+                        onclick="inputPhoneNumber()"
+                      >
+                        đăng ký ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
+                    <div class=""><img src="public/img26.png" alt="" /></div>
+                    <div
+                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                    >
+                      <h6 class="text-xl font-bold">
+                        Ưu đãi Tiêm chủng gói Gia Đình
+                      </h6>
+                      <span class="text-5xl font-bold">999k</span>
+                      <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
+                        onclick="inputPhoneNumber()"
+                      >
+                        đăng ký ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded-[2rem] bg-[#ECF3F6] p-3">
+                    <div class=""><img src="public/img26.png" alt="" /></div>
+                    <div
+                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                    >
+                      <h6 class="text-xl font-bold">
+                        Ưu đãi Tiêm chủng gói Gia Đình
+                      </h6>
+                      <span class="text-5xl font-bold">999k</span>
+                      <span class="text-sm text-ct_8888">(Giá cũ: 1999k)</span>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <p class="flex items-center gap-1">
+                        <i class="far fa-check-circle"></i>
+                        <span class="text-sm text-main"
+                          >Chương trình ưu đãi dành cho Gia đình 4 người</span
+                        >
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#2891CC] px-5 py-2 uppercase text-white"
+                        onclick="inputPhoneNumber()"
+                      >
+                        đăng ký ngay
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
-          </div> -->
+            <div class="swiper-button-next-3 md:text-xl">
+              <i
+                class="fas fa-arrow-right rounded-full bg-white p-2 text-[#2891CC] sm:bg-[#2891CC] sm:text-white md:p-3"
+              ></i>
+            </div>
+            <div class="swiper-button-prev-3 md:text-xl">
+              <i
+                class="fas fa-arrow-left rounded-full bg-white p-2 text-[#2891CC] sm:bg-[#2891CC] sm:text-white md:p-3"
+              ></i>
+            </div>
+          </div>
         </div>
       </section>
       <!-- End Section 13 -->
@@ -2557,8 +2756,8 @@
       </div>
     </footer>
 
-    <!-- Menu -->
     <script>
+      //  Menu
       const click_menu = document.querySelector(".btn-menu");
       const ul_menu = document.querySelector(".menu");
 
@@ -2566,6 +2765,18 @@
         e.preventDefault();
         ul_menu.classList.toggle("scale-y-0");
       });
+
+      // Phone number
+      function inputPhoneNumber() {
+        let phoneNumber = prompt("Nhập số điện thoại của bạn (10 chữ số):");
+
+        let phonePattern = /^0\d{9}$/;
+
+        if (phoneNumber == null || phoneNumber == "") return;
+        phonePattern.test(phoneNumber)
+          ? alert("Tổng đài viên sẽ gọi cho bạn . Vui lòng đợi !!")
+          : alert("Số điện thoại không hợp lệ!");
+      }
     </script>
 
     <!-- Swiper JS -->
@@ -2659,6 +2870,35 @@
         thumbs: {
           swiper: swiper,
         },
+      });
+      var swiper7 = new Swiper(".mySwiper7", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        navigation: {
+          nextEl: ".swiper-button-next-3",
+          prevEl: ".swiper-button-prev-3",
+        },
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.5,
+          },
+          1024: {
+            slidesPerView: 2,
+          },
+          1280: {
+            slidesPerView: 2.4,
+          },
+        },
+        initialSlide: 1,
       });
     </script>
   </body>
