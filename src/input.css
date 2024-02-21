@@ -93,6 +93,10 @@
   .mySwiper7 .swiper-slide-active span {
     @apply text-white;
   }
+
+  .trapezoid {
+    @apply border-b-8 border-l-8 border-solid border-b-white border-l-transparent;
+  }
 }
 
 @layer utilities {
@@ -100,6 +104,11 @@
     @apply bg-white text-[#2891CC];
   }
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 .dotted-line-horizontal {
   position: relative;
 }
@@ -242,7 +251,7 @@
 
 .swiper-pagination-bullet-active[aria-current="true"] {
   width: 3rem;
-  border-radius: 25%;
+  border-radius: 2rem;
   background-color: #e57709;
 }
 
@@ -274,4 +283,10 @@
   opacity: 0.35;
   cursor: auto;
   pointer-events: none;
+}
+
+@media (min-width: 1280px) {
+  .text-shadow {
+    text-shadow: none;
+  }
 }

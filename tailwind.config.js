@@ -22,7 +22,8 @@ module.exports = {
         "ct-orange": "0px 8px 16px 0px rgba(229, 119, 9, 0.35)",
       },
       spacing: {
-        "ct-left": "calc(50% + 10rem)",
+        "ct-left-10": "calc(50% + 10rem)",
+        "ct-left-30": "calc(50% + 31rem)",
       },
     },
   },
