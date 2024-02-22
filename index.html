@@ -22,41 +22,39 @@
   <body>
     <header class="fixed inset-x-0 top-0 z-50 mx-0 w-full bg-white shadow-md">
       <nav class="container relative flex items-center justify-between">
-        <div class="py-3">
-          <img src="public/logo_header.png" alt="" />
-        </div>
+        <a href="/" class="block py-3">
+          <img src="public/logo_header.png" alt=""
+        /></a>
 
-        <ul
-          class="menu absolute inset-x-0 top-0 mt-[4rem] flex origin-top scale-y-0 flex-col items-center bg-white font-bold shadow-lg transition-all duration-500 ease-in-out xl:static xl:mt-0 xl:scale-y-100 xl:flex-row xl:gap-5 xl:shadow-none"
-        >
-          <li class="menu-item">
+        <ul class="menu-desktop hidden font-bold xl:flex">
+          <li>
             <a href="#">Giới thiệu</a>
           </li>
-          <li class="menu-item">
+          <li>
             <a href="#">Đối tượng khách hàng</a>
           </li>
-          <li class="menu-item">
+          <li>
             <a href="#">Quy trình</a>
           </li>
-          <li class="menu-item">
+          <li>
             <a href="#">Bảng giá</a>
           </li>
-          <li class="menu-item">
+          <li>
             <a href="#">Cảm nhận của khách hàng</a>
           </li>
-          <li class="menu-item">
+          <li>
             <a href="#">Đội ngũ bác sĩ</a>
           </li>
-          <li class="menu-item">
+          <li>
             <a href="#">Hình ảnh & Video</a>
           </li>
         </ul>
 
         <a
           href="tel:+1900 1806"
-          class="hidden items-center gap-2 rounded-full bg-linear_orange p-2 font-bold text-white hover:opacity-75 xl:flex"
+          class="hidden items-center rounded-full bg-linear_orange p-2 font-bold text-white hover:opacity-75 xl:flex"
         >
-          <div class="rounded-full bg-white p-1">
+          <div class="mr-2 rounded-full bg-white p-1">
             <svg
               width="20"
               height="20"
@@ -108,25 +106,53 @@
 
         <div
           onclick="onToggleMenu()"
-          class="btn-menu flex cursor-pointer items-center gap-2 capitalize xl:hidden"
+          class="btn-menu-mobile hover:text-linear-blue flex cursor-pointer items-center text-3xl transition-colors duration-500 ease-in-out xl:hidden"
         >
-          Danh mục
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="h-6 w-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
-            />
-          </svg>
+          <i class="fas fa-bars"></i>
         </div>
       </nav>
+
+      <!-- menu mobile -->
+      <ul
+        class="menu-moblie z-[60] -translate-x-full transition-transform duration-700 ease-in-out"
+      >
+        <div class="flex items-center justify-between bg-linear_blue">
+          <div class="max-w-[13rem]">
+            <img src="public/img21.png" alt="" />
+          </div>
+          <i
+            onclick="onToggleMenu()"
+            class="far fa-caret-square-left btn-menu-mobile ml-10 text-4xl text-white transition-colors duration-300 ease-linear hover:text-main"
+          ></i>
+        </div>
+        <li>
+          <a href="#">Giới thiệu</a>
+        </li>
+        <li>
+          <a href="#">Đối tượng khách hàng</a>
+        </li>
+        <li>
+          <a href="#">Quy trình</a>
+        </li>
+        <li>
+          <a href="#">Bảng giá</a>
+        </li>
+        <li>
+          <a href="#">Cảm nhận của khách hàng</a>
+        </li>
+        <li>
+          <a href="#">Đội ngũ bác sĩ</a>
+        </li>
+        <li>
+          <a href="#">Hình ảnh & Video</a>
+        </li>
+        <li>
+          <a href="tel:+1900 1806">Liên hệ | 1900 1806</a>
+        </li>
+      </ul>
+      <div
+        class="bg-over-menu fixed inset-0 z-50 block translate-x-full bg-black/60 transition-transform duration-700 ease-linear xl:hidden"
+      ></div>
     </header>
 
     <main class="mt-[4rem]">
@@ -141,9 +167,9 @@
             <img src="public/img1.png" alt="" />
           </div>
           <div
-            class="absolute bottom-0 left-[20rem] hidden translate-y-1/2 gap-2 rounded-xl bg-white p-3 shadow-xl xl:flex"
+            class="absolute bottom-0 left-[20rem] hidden translate-y-1/2 rounded-xl bg-white p-3 shadow-xl xl:flex"
           >
-            <div class="rounded-xl bg-linear_blue p-1">
+            <div class="mr-2 rounded-xl bg-linear_blue p-1">
               <svg
                 width="54"
                 height="54"
@@ -176,10 +202,10 @@
             nhiễm như sởi, quai bị, rubella, thủy đậu, uốn ván...
           </p>
           <div
-            class="flex flex-col items-center justify-center gap-5 font-bold md:flex-row xl:justify-start"
+            class="flex flex-col items-center justify-center font-bold md:flex-row xl:justify-start"
           >
             <button
-              class="flex items-center gap-2 rounded-full bg-linear_orange bg-clip-border px-5 py-2 text-white hover:opacity-80"
+              class="mr-5 flex items-center rounded-full bg-linear_orange bg-clip-border px-5 py-2 text-white *:first:mr-5 hover:opacity-80"
               onclick="inputPhoneNumber()"
             >
               <svg
@@ -224,10 +250,10 @@
       <!-- Start Section2 -->
       <section>
         <div class="container grid grid-cols-1 gap-20 xl:grid-cols-2 xl:gap-10">
-          <div class="relative hidden justify-center md:flex">
+          <div class="relative hidden justify-center md:flex lg:justify-end">
             <img src="public/img2.png" alt="" />
             <div
-              class="absolute inset-x-0 bottom-0 -z-10 h-full rounded-xl bg-linear_blue lg:h-[70%] lg:rounded-[10rem]"
+              class="absolute bottom-0 left-0 right-0 -z-10 h-full rounded-[.5rem] bg-linear_blue lg:h-[70%] lg:rounded-[8.5rem] 2xl:left-[5rem]"
             ></div>
             <div
               class="absolute bottom-0 left-1/2 hidden translate-y-1/2 gap-2 rounded-xl bg-white p-3 shadow-xl lg:flex"
@@ -252,7 +278,7 @@
               </div>
             </div>
             <div
-              class="absolute left-0 top-2/3 hidden -translate-x-10 gap-2 rounded-xl bg-white p-3 shadow-xl lg:flex xl:-translate-x-1/3"
+              class="absolute left-0 top-2/3 hidden gap-2 rounded-xl bg-white p-3 shadow-xl lg:flex"
             >
               <div class="rounded-xl bg-linear_blue p-1">
                 <svg
@@ -1105,7 +1131,7 @@
       <!-- Start Section 8 -->
       <section class="relative">
         <div
-          class="left-ct-left-10 absolute bottom-0 right-0 top-[30%] -z-10 hidden rounded-bl-[5rem] rounded-tl-[20rem] bg-linear_blue lg:block"
+          class="absolute bottom-0 left-ct-left-10 right-0 top-[30%] -z-10 hidden rounded-bl-[5rem] rounded-tl-[20rem] bg-linear_blue lg:block"
         ></div>
         <div class="container">
           <h2 class="text-center">
@@ -2413,7 +2439,7 @@
           class="absolute inset-x-0 bottom-0 z-20 hidden h-[4rem] rounded-tl-[2rem] bg-white shadow-custom md:block"
         ></div>
         <div
-          class="2xl:left-ct-left-30 absolute bottom-[4rem] left-auto right-0 z-20 hidden rounded-tr-[2rem] bg-white md:block 2xl:right-auto"
+          class="absolute bottom-[4rem] left-auto right-0 z-20 hidden rounded-tr-[2rem] bg-white md:block 2xl:left-ct-left-30 2xl:right-auto"
         >
           <div class="relative px-7 py-2">
             <img src="public/Logo 1 (2).png" alt="" />
@@ -2599,7 +2625,7 @@
 
     <footer class="bg-linear_blue text-white">
       <div class="container py-10">
-        <div class="mb-6"><img src="public/img21.png" alt="" /></div>
+        <a href="/" class="mb-6 block"><img src="public/img21.png" alt="" /></a>
         <div
           class="grid grid-cols-1 gap-3 md:grid-cols-2 xl:flex xl:flex-wrap xl:justify-between"
         >
@@ -2722,12 +2748,15 @@
 
     <script>
       //  Menu
-      const click_menu = document.querySelector(".btn-menu");
-      const ul_menu = document.querySelector(".menu");
-
-      click_menu.addEventListener("click", (e) => {
-        e.preventDefault();
-        ul_menu.classList.toggle("scale-y-0");
+      const toggle_btn_menu = document.querySelectorAll(".btn-menu-mobile");
+      const ul_menu = document.querySelector(".menu-moblie");
+      const bg_over_menu = document.querySelector(".bg-over-menu");
+      [...toggle_btn_menu, bg_over_menu].forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          ul_menu.classList.toggle("-translate-x-full");
+          bg_over_menu.classList.toggle("translate-x-full");
+        });
       });
 
       // Phone number

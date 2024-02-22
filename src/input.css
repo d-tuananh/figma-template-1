@@ -16,6 +16,10 @@
   h2 {
     @apply text-2xl font-bold md:text-3xl;
   }
+
+  img {
+    @apply h-fit w-fit object-cover;
+  }
 }
 
 @layer components {
@@ -34,8 +38,8 @@
     @apply bg-linear_green bg-clip-text text-transparent;
   }
 
-  .menu-item {
-    @apply hover:text-linear-blue relative w-full py-2 text-center xl:w-fit xl:before:absolute xl:before:-bottom-3 xl:before:left-0 xl:before:block xl:before:h-1 xl:before:w-[0] xl:before:bg-linear_blue xl:before:transition-all xl:before:duration-500 xl:before:ease-in-out hover:xl:before:w-full;
+  ul.menu-desktop li {
+    @apply hover:text-linear-blue relative px-2 py-2 text-center before:absolute before:-bottom-3 before:left-0 before:block before:h-1 before:w-[0] before:bg-linear_blue before:transition-all before:duration-500 before:ease-in-out hover:before:w-full;
   }
 
   .triangle {
@@ -97,6 +101,14 @@
 
   .trapezoid {
     @apply border-b-8 border-l-8 border-solid border-b-white border-l-transparent;
+  }
+
+  .menu-moblie {
+    @apply fixed inset-y-0 left-0 block w-fit bg-white *:cursor-pointer *:border-b *:px-7 *:py-4 xl:hidden;
+  }
+
+  .menu-moblie li {
+    @apply hover:text-linear-blue;
   }
 }
 
