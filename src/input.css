@@ -10,15 +10,15 @@
   }
 
   section {
-    @apply mt-[4rem] first:mt-0 md:mt-[8rem];
+    @apply mt-[4rem] first:mt-0 md:mt-[6rem] xl:mt-[8rem];
   }
 
   h2 {
     @apply text-2xl font-bold md:text-3xl;
   }
 
-  img {
-    @apply h-fit w-fit object-cover;
+  footer a {
+    @apply hover:text-linear-orange;
   }
 }
 
@@ -110,6 +110,14 @@
   .menu-moblie li {
     @apply hover:text-linear-blue;
   }
+
+  .dotted-line-vertical {
+    @apply relative h-[5rem] w-1 border-r-2 border-dashed border-white before:absolute before:bottom-0 before:right-0 before:h-5 before:w-5 before:translate-x-1/2 before:translate-y-1/2 before:rounded-full before:bg-white before:content-[''];
+  }
+
+  .dotted-line-horizontal {
+    @apply h-1 w-[4rem] border-b-2 border-dashed border-white xl:w-[6rem];
+  }
 }
 
 @layer utilities {
@@ -120,49 +128,6 @@
 
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.dotted-line-horizontal {
-  position: relative;
-}
-
-.dotted-line-horizontal::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 7px;
-  height: 2px;
-  background-color: white; /* Màu của nét đứt */
-  box-shadow:
-    15px 0 0 white,
-    30px 0 0 white,
-    45px 0 0 white,
-    60px 0 0 white,
-    75px 0 0 white,
-    90px 0 0 white,
-    105px 0 0 white;
-}
-
-.dotted-line-vertical {
-  position: relative;
-}
-
-.dotted-line-vertical::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2px;
-  height: 5px; /* Chiều cao của nét đứt */
-  background-color: white; /* Màu của nét đứt */
-  box-shadow:
-    0 15px 0 white,
-    0 30px 0 white,
-    0 45px 0 white,
-    0 60px 0 white,
-    0 75px 0 white,
-    0 90px 0 white;
 }
 
 .line-dashed-1 {

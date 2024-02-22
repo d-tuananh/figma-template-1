@@ -167,9 +167,9 @@
             <img src="public/img1.png" alt="" />
           </div>
           <div
-            class="absolute bottom-0 left-[20rem] hidden translate-y-1/2 rounded-xl bg-white p-3 shadow-xl xl:flex"
+            class="absolute bottom-0 left-[20rem] hidden translate-y-1/2 space-x-2 rounded-xl bg-white p-3 shadow-xl xl:flex"
           >
-            <div class="mr-2 rounded-xl bg-linear_blue p-1">
+            <div class="rounded-xl bg-linear_blue p-1">
               <svg
                 width="54"
                 height="54"
@@ -190,7 +190,7 @@
           </div>
         </div>
         <div
-          class="text-shadow container py-[5rem] text-white xl:py-[10rem] xl:text-main"
+          class="text-shadow container py-[6rem] text-white xl:py-[8rem] xl:text-main 2xl:py-[10rem]"
         >
           <h1 class="text-center text-3xl font-bold lg:text-6xl xl:text-start">
             Dịch vụ Tiêm chủng Vắc-xin <br />Bảo vệ bản thân, bảo vệ mọi người
@@ -202,10 +202,10 @@
             nhiễm như sởi, quai bị, rubella, thủy đậu, uốn ván...
           </p>
           <div
-            class="flex flex-col items-center justify-center font-bold md:flex-row xl:justify-start"
+            class="flex flex-col items-center justify-center space-y-5 font-bold md:flex-row md:space-x-5 md:space-y-0 xl:justify-start"
           >
             <button
-              class="mr-5 flex items-center rounded-full bg-linear_orange bg-clip-border px-5 py-2 text-white *:first:mr-5 hover:opacity-80"
+              class="flex items-center rounded-full bg-linear_orange bg-clip-border px-5 py-2 text-white *:first:mr-5 hover:opacity-80"
               onclick="inputPhoneNumber()"
             >
               <svg
@@ -249,11 +249,13 @@
 
       <!-- Start Section2 -->
       <section>
-        <div class="container grid grid-cols-1 gap-20 xl:grid-cols-2 xl:gap-10">
-          <div class="relative hidden justify-center md:flex lg:justify-end">
+        <div
+          class="container grid grid-cols-1 space-y-20 xl:grid-cols-2 xl:space-x-10 xl:space-y-0"
+        >
+          <div class="relative hidden justify-center md:flex xl:justify-end">
             <img src="public/img2.png" alt="" />
             <div
-              class="absolute bottom-0 left-0 right-0 -z-10 h-full rounded-[.5rem] bg-linear_blue lg:h-[70%] lg:rounded-[8.5rem] 2xl:left-[5rem]"
+              class="absolute bottom-0 left-0 right-0 -z-10 h-full rounded-[.5rem] bg-linear_blue lg:left-[5rem] lg:h-[70%] lg:rounded-[8.5rem] xl:left-0 2xl:left-[5rem]"
             ></div>
             <div
               class="absolute bottom-0 left-1/2 hidden translate-y-1/2 gap-2 rounded-xl bg-white p-3 shadow-xl lg:flex"
@@ -324,7 +326,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col items-start gap-8 place-self-center">
+          <div class="flex flex-col items-start space-y-8 place-self-center">
             <h2 class="text-center xl:text-start">
               Hiệu quả phòng bệnh tối ưu từ việc thực hiện Tiêm chủng Vắc-xin
             </h2>
@@ -350,7 +352,7 @@
               bị y tế để được tư vấn và tiêm vắc xin chất lượng, an toàn.
             </p>
             <button
-              class="mx-auto flex items-center gap-2 rounded-full bg-linear_orange px-5 py-2 text-white hover:opacity-80 xl:mx-0"
+              class="mx-auto flex items-center space-x-2 rounded-full bg-linear_orange px-5 py-2 text-white hover:opacity-80 xl:mx-0"
               onclick="inputPhoneNumber()"
             >
               <svg
@@ -380,7 +382,7 @@
                   </clipPath>
                 </defs>
               </svg>
-              ĐĂNG KÝ TƯ VẤN
+              <span> ĐĂNG KÝ TƯ VẤN </span>
             </button>
           </div>
         </div>
@@ -390,7 +392,9 @@
       <!-- Section3 -->
       <section>
         <div class="container">
-          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div
+            class="grid grid-cols-1 space-x-5 space-y-5 md:grid-cols-2 lg:grid-cols-3"
+          >
             <div class="flex flex-col items-center justify-center gap-3 px-5">
               <div class="">
                 <img src="public/img3.png" alt="" />
@@ -482,7 +486,7 @@
               class="flex items-center gap-[2rem] lg:z-20 lg:flex-col lg:gap-0 lg:pt-[5rem]"
             >
               <div
-                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] xl:h-[13rem] xl:w-[13rem]"
+                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] 2xl:h-[13rem] 2xl:w-[13rem]"
               >
                 <div
                   class="flex items-center justify-center gap-2 rounded-full lg:h-4/5 lg:w-4/5 lg:flex-col lg:bg-white"
@@ -497,10 +501,7 @@
                 </div>
               </div>
               <div
-                class="dotted-line-vertical mt-[.7rem] hidden lg:block"
-              ></div>
-              <div
-                class="mb-2 mt-[5rem] hidden h-[1.5rem] w-[1.5rem] rounded-full bg-white lg:block"
+                class="dotted-line-vertical mb-3 mt-[.7rem] hidden lg:block"
               ></div>
               <div class="lg:text-center">
                 <h5 class="mb-2 text-lg font-bold">Đăng ký thông tin</h5>
@@ -514,7 +515,7 @@
               class="flex items-center gap-[2rem] lg:z-20 lg:flex-col-reverse lg:gap-0 lg:pb-[5rem]"
             >
               <div
-                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] xl:h-[13rem] xl:w-[13rem]"
+                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] 2xl:h-[13rem] 2xl:w-[13rem]"
               >
                 <div
                   class="flex items-center justify-center gap-2 rounded-full lg:h-4/5 lg:w-4/5 lg:flex-col lg:bg-white"
@@ -529,10 +530,7 @@
                 </div>
               </div>
               <div
-                class="mb-[5rem] hidden h-[1.5rem] w-[1.5rem] rounded-full bg-white lg:block"
-              ></div>
-              <div
-                class="dotted-line-vertical mt-[.7rem] hidden lg:block"
+                class="dotted-line-vertical mb-[.7rem] mt-3 hidden rotate-180 lg:block"
               ></div>
               <div class="lg:text-center">
                 <h5 class="mb-2 text-lg font-bold">Tư vấn & Thăm khám</h5>
@@ -546,7 +544,7 @@
               class="flex items-center gap-[2rem] lg:z-20 lg:flex-col lg:gap-0 lg:pt-[5rem]"
             >
               <div
-                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] xl:h-[13rem] xl:w-[13rem]"
+                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] 2xl:h-[13rem] 2xl:w-[13rem]"
               >
                 <div
                   class="flex items-center justify-center gap-2 rounded-full lg:h-4/5 lg:w-4/5 lg:flex-col lg:bg-white"
@@ -561,10 +559,7 @@
                 </div>
               </div>
               <div
-                class="dotted-line-vertical mt-[.7rem] hidden lg:block"
-              ></div>
-              <div
-                class="mb-2 mt-[5rem] hidden h-[1.5rem] w-[1.5rem] rounded-full bg-white lg:block"
+                class="dotted-line-vertical mb-3 mt-[.7rem] hidden lg:block"
               ></div>
               <div class="lg:text-center">
                 <h5 class="mb-2 text-lg font-bold">Thanh toán chi phí</h5>
@@ -578,7 +573,7 @@
               class="flex items-center gap-[2rem] lg:z-20 lg:flex-col-reverse lg:gap-0 lg:pb-[5rem]"
             >
               <div
-                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] xl:h-[13rem] xl:w-[13rem]"
+                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] 2xl:h-[13rem] 2xl:w-[13rem]"
               >
                 <div
                   class="flex items-center justify-center gap-2 rounded-full lg:h-4/5 lg:w-4/5 lg:flex-col lg:bg-white"
@@ -593,10 +588,7 @@
                 </div>
               </div>
               <div
-                class="mb-[5rem] hidden h-[1.5rem] w-[1.5rem] rounded-full bg-white lg:block"
-              ></div>
-              <div
-                class="dotted-line-vertical mt-[.7rem] hidden lg:block"
+                class="dotted-line-vertical mb-[.7rem] mt-3 hidden rotate-180 lg:block"
               ></div>
               <div class="lg:text-center">
                 <h5 class="mb-2 text-lg font-bold">Thực hiện tiêm chủng</h5>
@@ -610,7 +602,7 @@
               class="flex items-center gap-[2rem] lg:z-20 lg:flex-col lg:gap-0 lg:pt-[5rem]"
             >
               <div
-                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] xl:h-[13rem] xl:w-[13rem]"
+                class="flex items-center justify-center rounded-full lg:h-[10rem] lg:w-[10rem] lg:bg-linear_blue lg:shadow-2xl lg:outline-dashed lg:outline-2 lg:outline-offset-[.7rem] 2xl:h-[13rem] 2xl:w-[13rem]"
               >
                 <div
                   class="flex items-center justify-center gap-2 rounded-full lg:h-4/5 lg:w-4/5 lg:flex-col lg:bg-white"
@@ -625,10 +617,7 @@
                 </div>
               </div>
               <div
-                class="dotted-line-vertical mt-[.7rem] hidden lg:block"
-              ></div>
-              <div
-                class="mb-2 mt-[5rem] hidden h-[1.5rem] w-[1.5rem] rounded-full bg-white lg:block"
+                class="dotted-line-vertical mb-3 mt-[.7rem] hidden lg:block"
               ></div>
               <div class="lg:text-center">
                 <h5 class="mb-2 text-lg font-bold">Theo dõi sức khỏe</h5>
@@ -638,16 +627,24 @@
                 </p>
               </div>
             </div>
-            <div class="absolute left-[16.5%] top-[45%] hidden lg:block">
+            <div
+              class="absolute left-[16%] top-[50%] hidden lg:block xl:left-[15.5%] 2xl:left-[16.5%]"
+            >
               <div class="dotted-line-horizontal rotate-[30deg]"></div>
             </div>
-            <div class="absolute left-[43%] top-[45%] hidden lg:block">
+            <div
+              class="absolute left-[36.7%] top-[50%] hidden lg:block xl:left-[36%] 2xl:left-[37%]"
+            >
               <div class="dotted-line-horizontal rotate-[150deg]"></div>
             </div>
-            <div class="absolute right-[43%] top-[45%] hidden lg:block">
+            <div
+              class="absolute right-[36.7%] top-[50%] hidden lg:block xl:right-[36%] 2xl:right-[37%]"
+            >
               <div class="dotted-line-horizontal rotate-[30deg]"></div>
             </div>
-            <div class="absolute right-[16.5%] top-[45%] hidden lg:block">
+            <div
+              class="absolute right-[16%] top-[50%] hidden lg:block xl:right-[15.5%] 2xl:right-[16.5%]"
+            >
               <div class="dotted-line-horizontal rotate-[150deg]"></div>
             </div>
           </div>
@@ -1140,8 +1137,8 @@
           <div
             class="mx-auto my-6 h-1 w-[10rem] rounded-full bg-linear_blue"
           ></div>
-          <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
-            <div class="flex flex-col justify-end gap-10">
+          <div class="grid grid-cols-1 space-x-5 space-y-5 lg:grid-cols-2">
+            <div class="flex flex-col justify-end space-y-10">
               <div
                 class="flex items-center gap-3 rounded-2xl bg-[#ECF3F6] p-3 shadow-custom2 xl:odd:mr-[5rem] xl:even:ml-[5rem]"
               >
@@ -1584,11 +1581,11 @@
             class="mx-auto my-6 h-1 w-[10rem] rounded-full bg-linear_blue"
           ></div>
           <div
-            class="relative flex flex-col gap-5 before:inset-y-0 before:left-1/2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-white lg:before:absolute"
+            class="relative flex flex-col space-y-5 before:inset-y-0 before:left-1/2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-white lg:before:absolute"
           >
             <div class="circle relative grid grid-cols-1 gap-5 lg:grid-cols-2">
               <div
-                class="triangle relative z-10 flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 before:right-0 before:translate-x-1/2 lg:mr-[3rem] xl:flex-row"
+                class="triangle relative z-10 flex flex-col justify-center space-y-5 rounded-3xl bg-white p-5 before:right-0 before:translate-x-1/2 lg:mr-[3rem] xl:flex-row xl:space-x-5 xl:space-y-0"
               >
                 <div class="self-center xl:basis-2/5">
                   <img src="public/img28.png" alt="" />
@@ -1612,7 +1609,7 @@
               <div class="flex items-center">
                 <div class="hidden h-1 w-[5rem] bg-white lg:block"></div>
                 <div
-                  class="flex items-center gap-3 rounded-2xl bg-white px-5 py-3"
+                  class="flex items-center space-x-3 rounded-2xl bg-white px-5 py-3"
                 >
                   <div class=""><img src="public/img29.png" alt="" /></div>
                   <div class="">
@@ -1627,7 +1624,7 @@
             <div class="circle relative grid grid-cols-1 gap-5 lg:grid-cols-2">
               <div class="flex basis-1/2 items-center justify-end">
                 <div
-                  class="flex items-center gap-3 rounded-2xl bg-white px-5 py-3"
+                  class="flex items-center space-x-3 rounded-2xl bg-white px-5 py-3"
                 >
                   <div class=""><img src="public/img30.png" alt="" /></div>
                   <div class="">
@@ -1642,7 +1639,7 @@
                 <div class="hidden h-1 w-[5rem] bg-white lg:block"></div>
               </div>
               <div
-                class="triangle relative z-10 flex flex-col gap-3 rounded-2xl bg-white p-5 before:left-0 before:-translate-x-1/2 lg:ml-[3rem]"
+                class="triangle relative z-10 flex flex-col space-y-3 rounded-2xl bg-white p-5 before:left-0 before:-translate-x-1/2 lg:ml-[3rem]"
               >
                 <span class="text-lg font-bold"
                   >Cảm ơn quý khách đã đặt câu hỏi cho chuyên mục Hỏi đáp chuyên
@@ -1668,7 +1665,7 @@
             </div>
             <div class="circle relative grid grid-cols-1 gap-5 lg:grid-cols-2">
               <div
-                class="triangle relative z-10 flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 before:right-0 before:translate-x-1/2 lg:mr-[3rem] xl:flex-row"
+                class="triangle relative z-10 flex flex-col justify-center space-y-5 rounded-3xl bg-white p-5 before:right-0 before:translate-x-1/2 lg:mr-[3rem] xl:flex-row xl:space-x-5 xl:space-y-0"
               >
                 <div class="self-center xl:basis-2/5">
                   <img src="public/img28.png" alt="" />
@@ -1692,7 +1689,7 @@
               <div class="flex items-center">
                 <div class="hidden h-1 w-[5rem] bg-white lg:block"></div>
                 <div
-                  class="flex items-center gap-3 rounded-2xl bg-white px-5 py-3"
+                  class="flex items-center space-x-3 rounded-2xl bg-white px-5 py-3"
                 >
                   <div class=""><img src="public/img29.png" alt="" /></div>
                   <div class="">
@@ -1707,7 +1704,7 @@
             <div class="circle relative grid grid-cols-1 gap-5 lg:grid-cols-2">
               <div class="flex basis-1/2 items-center justify-end">
                 <div
-                  class="flex items-center gap-3 rounded-2xl bg-white px-5 py-3"
+                  class="flex items-center space-x-3 rounded-2xl bg-white px-5 py-3"
                 >
                   <div class=""><img src="public/img30.png" alt="" /></div>
                   <div class="">
@@ -1722,7 +1719,7 @@
                 <div class="hidden h-1 w-[5rem] bg-white lg:block"></div>
               </div>
               <div
-                class="triangle relative z-10 flex flex-col gap-3 rounded-2xl bg-white p-5 before:left-0 before:-translate-x-1/2 lg:ml-[3rem]"
+                class="triangle relative z-10 flex flex-col space-y-3 rounded-2xl bg-white p-5 before:left-0 before:-translate-x-1/2 lg:ml-[3rem]"
               >
                 <span class="text-lg font-bold"
                   >Cảm ơn quý khách đã đặt câu hỏi cho chuyên mục Hỏi đáp chuyên
@@ -1748,7 +1745,7 @@
             </div>
             <div class="circle relative grid grid-cols-1 gap-5 lg:grid-cols-2">
               <div
-                class="triangle relative z-10 flex flex-col justify-center gap-5 rounded-3xl bg-white p-5 before:right-0 before:translate-x-1/2 lg:mr-[3rem] xl:flex-row"
+                class="triangle relative z-10 flex flex-col justify-center space-y-5 rounded-3xl bg-white p-5 before:right-0 before:translate-x-1/2 lg:mr-[3rem] xl:flex-row xl:space-x-5 xl:space-y-0"
               >
                 <div class="self-center xl:basis-2/5">
                   <img src="public/img28.png" alt="" />
@@ -1772,7 +1769,7 @@
               <div class="flex items-center">
                 <div class="hidden h-1 w-[5rem] bg-white lg:block"></div>
                 <div
-                  class="flex items-center gap-3 rounded-2xl bg-white px-5 py-3"
+                  class="flex items-center space-x-3 rounded-2xl bg-white px-5 py-3"
                 >
                   <div class=""><img src="public/img29.png" alt="" /></div>
                   <div class="">
@@ -1787,7 +1784,7 @@
             <div class="circle relative grid grid-cols-1 gap-5 lg:grid-cols-2">
               <div class="flex basis-1/2 items-center justify-end">
                 <div
-                  class="flex items-center gap-3 rounded-2xl bg-white px-5 py-3"
+                  class="flex items-center space-x-3 rounded-2xl bg-white px-5 py-3"
                 >
                   <div class=""><img src="public/img30.png" alt="" /></div>
                   <div class="">
@@ -1802,7 +1799,7 @@
                 <div class="hidden h-1 w-[5rem] bg-white lg:block"></div>
               </div>
               <div
-                class="triangle relative z-10 flex flex-col gap-3 rounded-2xl bg-white p-5 before:left-0 before:-translate-x-1/2 lg:ml-[3rem]"
+                class="triangle relative z-10 flex flex-col space-y-3 rounded-2xl bg-white p-5 before:left-0 before:-translate-x-1/2 lg:ml-[3rem]"
               >
                 <span class="text-lg font-bold"
                   >Cảm ơn quý khách đã đặt câu hỏi cho chuyên mục Hỏi đáp chuyên
@@ -1849,26 +1846,40 @@
               class="swiper mySwiper6"
             >
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img38.png" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img37.png" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img38.png" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img39.png" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img40.png" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img38.png" />
                 </div>
-                <div class="swiper-slide">
-                  <img src="public/img15.png" />
+                <div
+                  class="swiper-slide max-h-[40rem] overflow-hidden rounded-2xl"
+                >
+                  <img src="public/img41.png" />
                 </div>
               </div>
             </div>
@@ -1933,12 +1944,12 @@
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
-                      class="aspect-video w-full rounded-2xl"
+                      class="peer peer aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 transition-all duration-700 ease-linear peer-hover:-z-10 peer-hover:translate-y-3/4 peer-hover:opacity-0 md:inset-x-[2rem] md:px-10"
                     >
-                      <h6 class="line-clamp-2 text-center font-bold">
+                      <h6 class="line-clamp-2 text-center text-base font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
                         chủng Vắc-xin
                       </h6>
@@ -1965,12 +1976,12 @@
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
-                      class="aspect-video w-full rounded-2xl"
+                      class="peer aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 transition-all duration-700 ease-linear peer-hover:-z-10 peer-hover:translate-y-3/4 peer-hover:opacity-0 md:inset-x-[2rem] md:px-10"
                     >
-                      <h6 class="line-clamp-2 text-center font-bold">
+                      <h6 class="line-clamp-2 text-center text-base font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
                         chủng Vắc-xin
                       </h6>
@@ -1997,12 +2008,12 @@
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
-                      class="aspect-video w-full rounded-2xl"
+                      class="peer aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 transition-all duration-700 ease-linear peer-hover:-z-10 peer-hover:translate-y-3/4 peer-hover:opacity-0 md:inset-x-[2rem] md:px-10"
                     >
-                      <h6 class="line-clamp-2 text-center font-bold">
+                      <h6 class="line-clamp-2 text-center text-base font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
                         chủng Vắc-xin
                       </h6>
@@ -2029,12 +2040,12 @@
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
-                      class="aspect-video w-full rounded-2xl"
+                      class="peer aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 transition-all duration-700 ease-linear peer-hover:-z-10 peer-hover:translate-y-3/4 peer-hover:opacity-0 md:inset-x-[2rem] md:px-10"
                     >
-                      <h6 class="line-clamp-2 text-center font-bold">
+                      <h6 class="line-clamp-2 text-center text-base font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
                         chủng Vắc-xin
                       </h6>
@@ -2061,12 +2072,12 @@
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
-                      class="aspect-video w-full rounded-2xl"
+                      class="peer aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 transition-all duration-700 ease-linear peer-hover:-z-10 peer-hover:translate-y-3/4 peer-hover:opacity-0 md:inset-x-[2rem] md:px-10"
                     >
-                      <h6 class="line-clamp-2 text-center font-bold">
+                      <h6 class="line-clamp-2 text-center text-base font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
                         chủng Vắc-xin
                       </h6>
@@ -2093,12 +2104,12 @@
                       frameborder="0"
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                       allowfullscreen
-                      class="aspect-video w-full rounded-2xl"
+                      class="peer aspect-video w-full rounded-2xl"
                     ></iframe>
                     <div
-                      class="absolute inset-x-[1rem] bottom-0 z-10 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 md:inset-x-[2rem] md:px-10"
+                      class="absolute inset-x-[1rem] bottom-0 translate-y-1/2 space-y-2 rounded-2xl bg-white px-6 py-3 shadow-custom3 transition-all duration-700 ease-linear peer-hover:-z-10 peer-hover:translate-y-3/4 peer-hover:opacity-0 md:inset-x-[2rem] md:px-10"
                     >
-                      <h6 class="line-clamp-2 text-center font-bold">
+                      <h6 class="line-clamp-2 text-center text-base font-bold">
                         Diễn viên Mạnh Trường trải nghiệm dịch vụ Tư vấn & Tiêm
                         chủng Vắc-xin
                       </h6>
@@ -2153,7 +2164,7 @@
                   <div class="w-full rounded-[2rem] bg-[#ECF3F6] p-3">
                     <div class=""><img src="public/img26.png" alt="" /></div>
                     <div
-                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                      class="flex flex-col items-center space-y-3 py-6 text-[#2891CC]"
                     >
                       <h6 class="text-xl font-bold">
                         Ưu đãi Tiêm chủng gói Gia Đình
@@ -2197,7 +2208,7 @@
                   <div class="w-full rounded-[2rem] bg-[#ECF3F6] p-3">
                     <div class=""><img src="public/img26.png" alt="" /></div>
                     <div
-                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                      class="flex flex-col items-center space-y-3 py-6 text-[#2891CC]"
                     >
                       <h6 class="text-xl font-bold">
                         Ưu đãi Tiêm chủng gói Gia Đình
@@ -2241,7 +2252,7 @@
                   <div class="w-full rounded-[2rem] bg-[#ECF3F6] p-3">
                     <div class=""><img src="public/img26.png" alt="" /></div>
                     <div
-                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                      class="flex flex-col items-center space-y-3 py-6 text-[#2891CC]"
                     >
                       <h6 class="text-xl font-bold">
                         Ưu đãi Tiêm chủng gói Gia Đình
@@ -2285,7 +2296,7 @@
                   <div class="w-full rounded-[2rem] bg-[#ECF3F6] p-3">
                     <div class=""><img src="public/img26.png" alt="" /></div>
                     <div
-                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                      class="flex flex-col items-center space-y-3 py-6 text-[#2891CC]"
                     >
                       <h6 class="text-xl font-bold">
                         Ưu đãi Tiêm chủng gói Gia Đình
@@ -2329,7 +2340,7 @@
                   <div class="w-full rounded-[2rem] bg-[#ECF3F6] p-3">
                     <div class=""><img src="public/img26.png" alt="" /></div>
                     <div
-                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                      class="flex flex-col items-center space-y-3 py-6 text-[#2891CC]"
                     >
                       <h6 class="text-xl font-bold">
                         Ưu đãi Tiêm chủng gói Gia Đình
@@ -2373,7 +2384,7 @@
                   <div class="w-full rounded-[2rem] bg-[#ECF3F6] p-3">
                     <div class=""><img src="public/img26.png" alt="" /></div>
                     <div
-                      class="flex flex-col items-center gap-3 py-6 text-[#2891CC]"
+                      class="flex flex-col items-center space-y-3 py-6 text-[#2891CC]"
                     >
                       <h6 class="text-xl font-bold">
                         Ưu đãi Tiêm chủng gói Gia Đình
@@ -2452,15 +2463,23 @@
           <div
             class="mx-[2rem] flex justify-between rounded-t-[2rem] bg-[#ECF3F6] px-[3rem] py-4 text-3xl text-ct_8888 sm:mx-[5rem] sm:gap-10 md:justify-start"
           >
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-instagram-square"></i>
+            <a href="#"
+              ><i class="fab fa-facebook hover:text-linear-orange"></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-twitter hover:text-linear-orange"></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-youtube hover:text-linear-orange"></i
+            ></a>
+            <a href="#"
+              ><i class="fab fa-instagram hover:text-linear-orange"></i
+            ></a>
           </div>
           <div
             class="flex grid-cols-5 flex-col-reverse gap-5 rounded-[2rem] bg-white px-5 pb-[3rem] pt-[3rem] md:pb-[12rem] lg:grid lg:px-12 lg:pb-[5rem]"
           >
-            <div class="col-span-3 flex flex-col gap-4">
+            <div class="col-span-3 flex flex-col space-y-4">
               <h3 class="text-2xl font-bold md:text-4xl">
                 9 mũi vắc xin ngoài chương trình tiêm chủng mở rộng cha mẹ không
                 nên bỏ qua
@@ -2557,7 +2576,7 @@
                 thời!
               </p>
             </div>
-            <form action="" class="flex flex-col gap-2 bg-white p-4">
+            <form action="" class="flex flex-col space-y-2 bg-white p-4">
               <input
                 class="rounded-lg bg-[#F5F5F5] px-4 py-2 outline-none"
                 type="text"
@@ -2624,12 +2643,12 @@
     </main>
 
     <footer class="bg-linear_blue text-white">
-      <div class="container py-10">
+      <div class="container py-8">
         <a href="/" class="mb-6 block"><img src="public/img21.png" alt="" /></a>
         <div
-          class="grid grid-cols-1 gap-3 md:grid-cols-2 xl:flex xl:flex-wrap xl:justify-between"
+          class="grid grid-cols-1 space-x-3 space-y-3 md:grid-cols-2 xl:flex xl:justify-between"
         >
-          <div class="flex flex-col gap-3 text-lg">
+          <div class="flex flex-col space-y-3 text-lg">
             <h6 class="text-xl font-bold">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h6>
             <p>
               <span class="font-bold">Địa chỉ:</span> Số 9, Phố Viên, P. Cổ Nhuế
@@ -2646,7 +2665,7 @@
               <a href="tel:+1900 1806">1900 1806</a>
             </p>
           </div>
-          <div class="flex flex-col gap-3 text-lg">
+          <div class="flex flex-col space-y-3 text-lg">
             <h6 class="text-xl font-bold">Thời gian mở cửa</h6>
             <p>
               <span class="font-bold">Thứ 2 - Chủ nhật :</span> 07:30 -19:00
@@ -2656,7 +2675,7 @@
               <a href="tel:+0833 015 115">0833 015 115</a>
             </p>
           </div>
-          <div class="flex flex-col gap-3 text-lg">
+          <div class="flex flex-col space-y-3 text-lg">
             <h6 class="text-xl font-bold">Liên hệ</h6>
             <p>
               <span class="font-bold">Hotline Tiêm chủng:</span>
@@ -2669,77 +2688,11 @@
           </div>
           <div class="flex flex-col gap-3">
             <h6 class="text-xl font-bold">Mạng xã hội</h6>
-            <div class="flex gap-5">
-              <div class="">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M28.0016 14.0865C28.0016 6.30602 21.733 -0.000976562 14.0015 -0.000976562C6.26655 0.000773438 -0.00195312 6.30602 -0.00195312 14.0883C-0.00195312 21.118 5.11855 26.9455 11.8105 28.0025V18.1588H8.25805V14.0883H11.814V10.982C11.814 7.45227 13.9053 5.50277 17.1025 5.50277C18.6355 5.50277 20.2368 5.77752 20.2368 5.77752V9.24252H18.471C16.7333 9.24252 16.1908 10.3293 16.1908 11.444V14.0865H20.0723L19.4528 18.157H16.189V28.0008C22.8811 26.9438 28.0016 21.1163 28.0016 14.0865Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
-              <div class="">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_1_6800)">
-                    <path
-                      d="M28.0001 5.29864C26.9712 5.75457 25.8659 6.06264 24.7039 6.20188C25.9028 5.48445 26.7999 4.3553 27.2275 3.02512C26.101 3.69422 24.8682 4.1652 23.5825 4.41757C22.7179 3.49445 21.5728 2.88258 20.3248 2.67698C19.0769 2.47137 17.7959 2.68353 16.6809 3.28051C15.5659 3.87749 14.6792 4.8259 14.1584 5.97848C13.6376 7.13106 13.5119 8.42333 13.8008 9.65467C11.5183 9.54006 9.28539 8.94679 7.24699 7.91337C5.20858 6.87994 3.41025 5.42945 1.96871 3.65604C1.4758 4.50629 1.19238 5.4921 1.19238 6.54198C1.19183 7.48712 1.42458 8.41778 1.86998 9.25139C2.31537 10.085 2.95964 10.7958 3.74562 11.3207C2.83409 11.2917 1.94267 11.0454 1.14556 10.6023V10.6762C1.14547 12.0018 1.604 13.2866 2.44335 14.3126C3.2827 15.3386 4.45118 16.0426 5.7505 16.3052C4.90491 16.534 4.01837 16.5677 3.15783 16.4037C3.52443 17.5443 4.23852 18.5417 5.20014 19.2563C6.16176 19.9709 7.32276 20.3669 8.52062 20.3889C6.48719 21.9851 3.97591 22.851 1.39078 22.8472C0.932848 22.8473 0.475305 22.8206 0.0205078 22.7671C2.64457 24.4543 5.69917 25.3497 8.81882 25.3462C19.3793 25.3462 25.1524 16.5997 25.1524 9.01389C25.1524 8.76744 25.1462 8.51852 25.1351 8.27207C26.2581 7.45998 27.2274 6.45437 27.9977 5.30233L28.0001 5.29864Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_6800">
-                      <rect width="28" height="28" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <div class="">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_1_6794)">
-                    <path
-                      d="M27.4169 7.59175C27.2584 7.02619 26.9495 6.51415 26.5232 6.11008C26.0849 5.69359 25.5477 5.39566 24.9622 5.24442C22.7712 4.66692 13.9932 4.66692 13.9932 4.66692C10.3338 4.62528 6.67523 4.80841 3.03823 5.21525C2.45279 5.37767 1.91656 5.68225 1.47723 6.10192C1.04557 6.51725 0.732898 7.02942 0.569565 7.59058C0.177207 9.70429 -0.0134275 11.8505 0.000231766 14.0003C-0.0137682 16.1481 0.176398 18.2936 0.569565 20.4099C0.729398 20.9688 1.0409 21.4786 1.47373 21.8904C1.90657 22.3023 2.44557 22.5998 3.03823 22.7573C5.2584 23.3336 13.9932 23.3336 13.9932 23.3336C17.6573 23.3753 21.3206 23.1922 24.9622 22.7853C25.5477 22.634 26.0849 22.3361 26.5232 21.9196C26.9549 21.5078 27.2617 20.9956 27.4157 20.4379C27.8183 18.325 28.0141 16.1779 28.0002 14.0271C28.0305 11.8671 27.835 9.70991 27.4169 7.59058V7.59175ZM11.2026 17.9949V10.0068L18.5059 14.0014L11.2026 17.9949Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_6794">
-                      <rect width="28" height="28" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <div class="">
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.9995 9.7207C11.643 9.7207 9.71993 11.6438 9.71993 14.0003C9.71993 16.3568 11.643 18.2799 13.9995 18.2799C16.356 18.2799 18.2791 16.3568 18.2791 14.0003C18.2791 11.6438 16.356 9.7207 13.9995 9.7207ZM26.8351 14.0003C26.8351 12.2281 26.8511 10.472 26.7516 8.70297C26.6521 6.64826 26.1833 4.8247 24.6808 3.32219C23.1751 1.81647 21.3548 1.35095 19.3 1.25142C17.5278 1.15189 15.7717 1.16795 14.0027 1.16795C12.2305 1.16795 10.4744 1.15189 8.70541 1.25142C6.6507 1.35095 4.82714 1.81968 3.32463 3.32219C1.81891 4.82791 1.35339 6.64826 1.25386 8.70297C1.15434 10.4752 1.17039 12.2313 1.17039 14.0003C1.17039 15.7693 1.15434 17.5286 1.25386 19.2976C1.35339 21.3523 1.82212 23.1759 3.32463 24.6784C4.83035 26.1841 6.6507 26.6496 8.70541 26.7491C10.4776 26.8487 12.2337 26.8326 14.0027 26.8326C15.7749 26.8326 17.5311 26.8487 19.3 26.7491C21.3548 26.6496 23.1783 26.1809 24.6808 24.6784C26.1865 23.1727 26.6521 21.3523 26.7516 19.2976C26.8543 17.5286 26.8351 15.7725 26.8351 14.0003ZM13.9995 20.585C10.3556 20.585 7.4148 17.6442 7.4148 14.0003C7.4148 10.3564 10.3556 7.41556 13.9995 7.41556C17.6434 7.41556 20.5842 10.3564 20.5842 14.0003C20.5842 17.6442 17.6434 20.585 13.9995 20.585ZM20.8539 8.68371C20.0031 8.68371 19.3161 7.99666 19.3161 7.14588C19.3161 6.2951 20.0031 5.60806 20.8539 5.60806C21.7047 5.60806 22.3917 6.2951 22.3917 7.14588C22.392 7.3479 22.3524 7.54799 22.2752 7.73468C22.198 7.92138 22.0847 8.091 21.9419 8.23386C21.799 8.37671 21.6294 8.48997 21.4427 8.56717C21.256 8.64436 21.0559 8.68396 20.8539 8.68371Z"
-                    fill="white"
-                  />
-                </svg>
-              </div>
+            <div class="flex space-x-5 text-3xl">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
